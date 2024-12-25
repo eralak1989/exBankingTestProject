@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package banking;
+
+service BankingService {
+  rpc CreateUser(CreateUserRequest) returns (CreateUserResponse);
+  rpc Deposit (DepositRequest) returns (DepositResponse);
+  rpc Withdraw (WithdrawRequest) returns (WithdrawResponse);
+  rpc GetBalance (GetBalanceRequest) returns (GetBalanceResponse);
+  rpc Send (SendRequest) returns (SendResponse);
+}
+
+message CreateUserRequest {
+  string username = 1;
+  double balance = 2;
+}
+
+message CreateUserResponse {
+  string message = 1;
+  double balance = 2;
+}
+
+message DepositRequest {
+  string username = 1;
+  double amount = 2;
+}
+
+message DepositResponse {
+  string message = 1;
+  double balance = 2;
+}
+
+message WithdrawRequest {
+  string username = 1;
+  double amount = 2;
+}
+
+message WithdrawResponse {
+  string message = 1;
+  double balance = 2;
+}
+
+message GetBalanceRequest {
+  string username = 1;
+}
+
+message GetBalanceResponse {
+  string username = 1;
+  double balance = 2;
+}
+
+message SendRequest {
+  string from_username = 1;
+  string to_username = 2;
+  double amount = 3;
+}
+
+message SendResponse {
+  string message = 1;
+  double from_balance = 2;
+  double to_balance = 3;
+}

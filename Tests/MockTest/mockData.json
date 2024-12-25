@@ -1,0 +1,12 @@
+{
+    "createUser": { "message": "User created successfully." },
+    "deposit": { "message": "Deposit successful.", "balance": 150 },
+    "withdraw": { "message": "Withdrawal successful.", "balance": 100 },
+    "getBalance": { "balance": 200 },
+    "send": {
+      "message": "Transfer successful.",
+      "from_balance": 50,
+      "to_balance": 250
+    }
+  }
+  

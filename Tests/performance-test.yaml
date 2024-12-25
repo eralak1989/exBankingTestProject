@@ -1,0 +1,13 @@
+config:
+  target: "http://localhost:50051" # Replace with your server's URL and port
+  phases:
+    - duration: 60
+      arrivalRate: 50
+      name: "Deposit Load Test" # 50 requests per second for 60 seconds
+scenarios:
+  - flow:
+      - post:
+          url: "/deposit"
+          json:
+            username: "user1"
+            amount: 10

@@ -1,0 +1,38 @@
+
+Summary:
+  Count:	335357
+  Total:	30.00 s
+  Slowest:	36.88 ms
+  Fastest:	0 ns
+  Average:	8.15 ms
+  Requests/sec:	11177.40
+
+Response time histogram:
+  0.000  [303]    |
+  3.688  [2166]   |∎
+  7.376  [171010] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  11.065 [130373] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  14.753 [24382]  |∎∎∎∎∎∎
+  18.441 [4275]   |∎
+  22.129 [2164]   |∎
+  25.818 [443]    |
+  29.506 [127]    |
+  33.194 [27]     |
+  36.882 [73]     |
+
+Latency distribution:
+  10 % in 6.28 ms 
+  25 % in 6.69 ms 
+  50 % in 7.32 ms 
+  75 % in 9.22 ms 
+  90 % in 10.95 ms 
+  95 % in 12.25 ms 
+  99 % in 17.65 ms 
+
+Status code distribution:
+  [OK]            335343 responses   
+  [Unavailable]   14 responses       
+
+Error distribution:
+  [14]   rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:50162->127.0.0.1:50051: use of closed network connection   
+
