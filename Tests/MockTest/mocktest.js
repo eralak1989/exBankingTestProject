@@ -52,6 +52,7 @@ describe('Mock gRPC Service Tests', () => {
 
   // Withdraw
   it('should withdraw money from a user account', (done) => {
+    
     const username = 'new_user'; 
     const amount = 30;
 
@@ -71,7 +72,7 @@ describe('Mock gRPC Service Tests', () => {
     });
   });
 
-  // GetBalance
+  //GetBalance
   it('should retrieve the balance of a user', (done) => {
     const username = 'new_user';
     client.GetBalance({ username }, (err, response) => {
@@ -85,8 +86,9 @@ describe('Mock gRPC Service Tests', () => {
     });
   });
 
-  // Send
+  //Send
   it('should transfer funds between users', (done) => {
+
     const from_username = 'new_user'; 
     const to_username = 'user4'; 
     const amount = 20;
@@ -110,7 +112,8 @@ describe('Mock gRPC Service Tests', () => {
     });
   });
 
+
   after(() => {
     client.close();
   });
-});
+ });

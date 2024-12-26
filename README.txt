@@ -113,7 +113,7 @@ How to run the files
 3. Run the mock services.
 	i)Stop all running servers.
 	ii)Open a terminal and run mock Server. [Powershell command: node mockServer.js]
-	iii)Open another terminal and run mock tests. [Powershell command: node mockTests.js]
+	iii)Open another terminal and run mock tests. [Powershell command:  npx mocha mocktest.js]
 	
 4. Run Functional Automation tests
 
